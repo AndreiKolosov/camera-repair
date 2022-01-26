@@ -164,6 +164,36 @@
 .header {
   padding: 60px 160px;
 }
+.header__logo {
+  display: block;
+  margin: 0 0 60px 6px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.36;
+  position: relative;
+}
+.header__logo::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 103px;
+  width: 99px;
+  height: 20px;
+  background-color: #25e197;
+  border-radius: 4px;
+}
+.header__logo::after {
+  content: "мы открылись";
+  position: absolute;
+  top: 5px;
+  left: 111px;
+  width: 99px;
+  height: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  color: #000;
+}
 .header__title {
   font-weight: 400;
   font-size: 112px;
@@ -182,6 +212,9 @@
   .header {
     padding: 60px 60px 32px;
   }
+  .header__logo {
+    margin: 0 0 70px 0;
+  }
   .header__title {
     font-size: 70px;
     line-height: 1.29;
@@ -196,6 +229,17 @@
 @media screen and (max-width: 533px) {
   .header {
     padding: 24px 20px 20px;
+  }
+  .header__logo {
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0 0 60px 0;
+  }
+  .header__logo::before {
+    left: 99px;
+  }
+  .header__logo::after {
+    left: 107px;
   }
   .header__title {
     font-size: 50px;
