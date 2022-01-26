@@ -1,0 +1,178 @@
+@charset "UTF-8";
+@import '../vendor/normalize.css';
+@import '../vendor/fonts.css';
+.page {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  max-width: 1440px;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #000;
+  color: #fff;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.form__email-input {
+  border: none;
+  outline: none;
+  background-color: rgba(142, 142, 152, 0.2);
+  border-radius: 8px 0px 0px 8px;
+  width: 348px;
+  height: 50px;
+  box-sizing: border-box;
+  position: relative;
+  font-family: inherit;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.375px;
+  padding: 0 16px;
+}
+.form__button {
+  position: absolute;
+  width: 221px;
+  height: 50px;
+  background-color: #47474c;
+  border-radius: 0px 8px 8px 0px;
+}
+.form__button::before {
+  content: "Отремонтируйте камеру";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  letter-spacing: 0.375px;
+  color: #fff;
+  margin: 0 10px 0 0;
+}
+.form__subline {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #47474c;
+  margin: 12px 0 0 10px;
+}
+@media screen and (max-width: 1024px) {
+  .form__email-input {
+    width: calc(100% - 221px);
+  }
+}
+@media screen and (max-width: 533px) {
+  .form__button {
+    width: 51px;
+    height: 50px;
+  }
+  .form__button::before {
+    content: none;
+  }
+  .form__email-input {
+    width: calc(100% - 51px);
+  }
+}
+
+.header {
+  padding: 60px 160px;
+}
+.header__logo {
+  display: block;
+  margin: 0 0 60px 6px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.36;
+  position: relative;
+}
+.header__logo::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 103px;
+  width: 99px;
+  height: 20px;
+  background-color: #25e197;
+  border-radius: 4px;
+}
+.header__logo::after {
+  content: "мы открылись";
+  position: absolute;
+  top: 5px;
+  left: 111px;
+  width: 99px;
+  height: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  color: #000;
+}
+.header__title {
+  font-weight: 400;
+  font-size: 112px;
+  line-height: 1;
+  margin: 0 0 20px 0;
+  max-width: 1030px;
+}
+.header__subtitle {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 0.87;
+  margin: 0 0 230px 0;
+  max-width: 1030px;
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 60px 60px 32px;
+  }
+  .header__logo {
+    margin: 0 0 70px 0;
+  }
+  .header__title {
+    font-size: 70px;
+    line-height: 1.29;
+    max-width: 644px;
+  }
+  .header__subtitle {
+    font-size: 50px;
+    line-height: 1.2;
+    max-width: 644px;
+  }
+}
+@media screen and (max-width: 533px) {
+  .header {
+    padding: 24px 20px 20px;
+  }
+  .header__logo {
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0 0 60px 0;
+  }
+  .header__logo::before {
+    left: 99px;
+  }
+  .header__logo::after {
+    left: 107px;
+  }
+  .header__title {
+    font-size: 50px;
+    line-height: 1.2;
+    max-width: 320px;
+  }
+  .header__subtitle {
+    font-size: 30px;
+    line-height: 1.27;
+    max-width: 320px;
+  }
+}
+
+.content {
+  flex: 1;
+}/*# sourceMappingURL=index.css.map */
