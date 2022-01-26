@@ -51,4 +51,15 @@
       }
     }
   }
+
+  &_place_footer {
+    grid-area: logo;
+    margin: 0 0 84px 0;
+
+    @media screen and (max-width: 533px) {
+      & {
+        margin: 0 0 184px 0;
+      }
+    }
+  }
 }

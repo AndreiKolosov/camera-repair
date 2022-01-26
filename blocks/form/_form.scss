@@ -62,4 +62,31 @@
       width: calc(100% - 51px);
     }
   }
+
+  &_place_footer {
+    grid-area: form;
+
+    .form__subline {
+      margin: 12px 0 0 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+      & {
+        margin: 0 0 60px 0;
+      }
+
+      .form__email-input {
+        width: calc(100% - 300px);
+      }
+    }
+
+    @media screen and (max-width: 533px) {
+      & {
+        margin: 0 0 40px 0;
+      }
+      .form__email-input {
+        width: calc(100% - 51px);
+      }
+    }
+  }
 }
