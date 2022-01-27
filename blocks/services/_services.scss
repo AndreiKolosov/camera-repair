@@ -1,7 +1,10 @@
 .services {
   padding: 60px 30px;
-  display: flex;
-  justify-content: center;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
 
   &__card {
     max-width: 550px;
@@ -57,9 +60,12 @@
 
   @media screen and (max-width: 1024px) {
     & {
+      padding: 100px 60px;
+    }
+
+    &__list {
       flex-direction: column;
       align-items: center;
-      padding: 100px 60px;
     }
 
     &__card {

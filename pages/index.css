@@ -22,6 +22,12 @@
   cursor: pointer;
 }
 
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 .form__email-input {
   border: none;
   outline: none;
@@ -404,6 +410,8 @@
 
 .services {
   padding: 60px 30px;
+}
+.services__list {
   display: flex;
   justify-content: center;
 }
@@ -454,9 +462,11 @@
 }
 @media screen and (max-width: 1024px) {
   .services {
+    padding: 100px 60px;
+  }
+  .services__list {
     flex-direction: column;
     align-items: center;
-    padding: 100px 60px;
   }
   .services__card {
     margin-right: 0;
