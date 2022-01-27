@@ -328,7 +328,7 @@
     max-width: 648px;
   }
   .preview__decor-container {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.2fr 0.3fr 0.5fr;
     max-width: 648px;
     margin: 0 auto 120px;
   }
@@ -336,10 +336,12 @@
     grid-column: 1/3;
   }
   .preview__img:nth-child(2) {
+    min-width: 180px;
     max-width: 180px;
     grid-column: 3/4;
   }
   .preview__img:nth-child(3) {
+    min-width: 173px;
     max-width: 173px;
     grid-column: 1/2;
   }
