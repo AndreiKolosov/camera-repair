@@ -1,0 +1,84 @@
+.warranty {
+  padding: 60px 30px;
+
+  &__title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.25;
+    max-width: 1120px;
+    margin: 0 auto 60px;
+  }
+
+  &__cards {
+    margin: 0 auto;
+    max-width: 1120px;
+    display: grid;
+    justify-content: center;
+    gap: 0 20px;
+    grid-template-columns: repeat(4, minmax(min-content, max-content));
+  }
+
+  &__card {
+    max-width: 265px;
+    background-color: #1c1c1e;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #232327;
+    }
+  }
+
+  &__card-name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    color: #eaeaf0;
+    margin: 0 0 38px 0;
+  }
+
+  &__card-description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.27;
+    color: #8e8e98;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__cards {
+      grid-template-columns: repeat(2, minmax(min-content, max-content));
+      grid-template-rows: repeat(2, minmax(min-content, max-content));
+      gap: 20px;
+    }
+
+    &__title {
+      max-width: 648px;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+
+  @media screen and (max-width: 533px) {
+    &__cards {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__title {
+      max-width: 448px;
+      font-size: 12px;
+      margin: 0 0 40px 0;
+    }
+
+    &__card-name {
+      margin: 0 0 36px 0;
+    }
+
+    &__card-description {
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+}
