@@ -61,9 +61,13 @@
   }
 
   @media screen and (max-width: 533px) {
+    & {
+      padding: 60px 20px;
+    }
     &__cards {
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
 
     &__title {

@@ -351,7 +351,7 @@
 }
 @media screen and (max-width: 767px) {
   .preview {
-    padding: 20px 30px 30px;
+    padding: 20px 20px 30px;
   }
   .preview__decor-container {
     display: flex;
@@ -542,9 +542,13 @@
   }
 }
 @media screen and (max-width: 533px) {
+  .warranty {
+    padding: 60px 20px;
+  }
   .warranty__cards {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .warranty__title {
     max-width: 448px;
@@ -555,6 +559,68 @@
     margin: 0 0 36px 0;
   }
   .warranty__card-description {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+
+.support {
+  padding: 60px 160px 240px;
+}
+.support__title {
+  margin: 0 0 90px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.25;
+}
+.support__button {
+  width: 306px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #47474c;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  letter-spacing: 0.375px;
+  color: #ffffff;
+  margin: 0 auto 63px;
+}
+.support__subline {
+  margin: 0;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.25;
+  color: #8e8e98;
+}
+@media screen and (max-width: 1024px) {
+  .support {
+    padding: 60px 60px 210px;
+  }
+  .support__title {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .support__subline {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 533px) {
+  .support {
+    padding: 40px 20px 180px;
+  }
+  .support__title {
+    font-size: 12px;
+  }
+  .support__subline {
+    font-size: 12px;
+    max-width: 280px;
+  }
+  .support__button {
+    display: block;
+    width: 280px;
+    margin: 0 0 30px;
     font-size: 12px;
     line-height: 1.5;
   }
