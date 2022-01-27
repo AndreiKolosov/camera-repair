@@ -63,12 +63,14 @@
       font-size: 70px;
       line-height: 1.29;
       max-width: 644px;
+      margin: 0;
     }
 
     &__subtitle {
       font-size: 50px;
       line-height: 1.2;
       max-width: 644px;
+      margin: 0 0 470px 0;
     }
   }
 
@@ -95,12 +97,14 @@
       font-size: 50px;
       line-height: 1.2;
       max-width: 320px;
+      margin: 0 0 10px 0;
     }
 
     &__subtitle {
       font-size: 30px;
       line-height: 1.27;
       max-width: 320px;
+      margin: 0 0 260px 0;
     }
   }
 }

@@ -19,7 +19,7 @@
     text-align: center;
     letter-spacing: 0.375px;
     color: #ffffff;
-    margin: 0 auto 63px;
+    margin: 0 auto 50px;
   }
 
   &__subline {
@@ -44,6 +44,10 @@
       font-size: 20px;
       line-height: 1.5;
     }
+
+    &__button {
+      margin: 0 auto 33px;
+    }
   }
 
   @media screen and (max-width: 533px) {
@@ -53,6 +57,7 @@
 
     &__title {
       font-size: 12px;
+      margin: 0 0 50px 0;
     }
 
     &__subline {

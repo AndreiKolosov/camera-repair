@@ -47,6 +47,9 @@
   }
 
   @media screen and (max-width: 1024px) {
+    & {
+      padding: 0 30px 60px;
+    }
     &__cards {
       grid-template-columns: repeat(2, minmax(min-content, max-content));
       grid-template-rows: repeat(2, minmax(min-content, max-content));
@@ -62,7 +65,7 @@
 
   @media screen and (max-width: 533px) {
     & {
-      padding: 60px 20px;
+      padding: 30px 20px;
     }
     &__cards {
       display: flex;
