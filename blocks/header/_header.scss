@@ -1,7 +1,5 @@
 .header {
-  &__content-wrapper {
-    padding: 60px 160px;
-  }
+  padding: 60px 160px;
 
   &__logo {
     display: block;
@@ -52,52 +50,8 @@
     max-width: 1030px;
   }
 
-  &__image-container {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0 30px;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1.5fr;
-  }
-
-  &__img {
-    border-radius: 10px;
-    box-sizing: border-box;
-
-    &:nth-child(1) {
-      max-width: 448px;
-      min-width: 448px;
-      width: 100%;
-      grid-column: 1/2;
-    }
-
-    &:nth-child(2) {
-      background-color: #ffd233;
-      max-width: 912px;
-      width: 100%;
-      grid-column: 2/5;
-    }
-
-    &:nth-child(3) {
-      background-color: #25e197;
-      max-width: 630px;
-      width: 100%;
-      grid-column: 1/3;
-    }
-
-    &:nth-child(4) {
-      max-width: 730px;
-      max-height: 552px;
-      min-width: 455px;
-      width: 100%;
-      grid-column: 3/5;
-    }
-  }
-
   @media screen and (max-width: 1024px) {
-    &__content-wrapper {
+    & {
       padding: 60px 60px 32px;
     }
 
@@ -116,78 +70,10 @@
       line-height: 1.2;
       max-width: 644px;
     }
-
-    &__image-container {
-      grid-template-columns: 1fr 1fr 1fr;
-      max-width: 690px;
-      margin: 0 auto;
-    }
-
-    &__img {
-      &:nth-child(1) {
-        grid-column: 1/3;
-      }
-
-      &:nth-child(2) {
-        min-width: 180px;
-        grid-column: 3/4;
-      }
-
-      &:nth-child(3) {
-        min-width: 173px;
-        grid-column: 1/2;
-      }
-
-      &:nth-child(4) {
-        max-width: 455px;
-        max-height: 344px;
-        grid-column: 2/4;
-      }
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    &__image-container {
-      display: flex;
-      flex-direction: column;
-      max-width: 533px;
-      margin: 0 auto;
-    }
-
-    &__img {
-      &:nth-child(1) {
-        min-width: 280px;
-        width: 100%;
-        // grid-column: 1/1;
-      }
-
-      &:nth-child(2) {
-        min-width: 280px;
-        max-height: 67px;
-        padding-top: 7.5%;
-        padding-bottom: 7.5%;
-        // grid-column: 1/1;
-      }
-
-      &:nth-child(3) {
-        min-width: 280px;
-        max-height: 124px;
-        padding-top: 14.9%;
-        padding-bottom: 14.9%;
-        // grid-column: 1/1;
-      }
-
-      &:nth-child(4) {
-        min-width: 280px;
-        width: 100%;
-
-        // grid-column: 1/1;
-      }
-    }
   }
 
   @media screen and (max-width: 533px) {
-    &__content-wrapper {
+    & {
       padding: 24px 20px 20px;
     }
 
