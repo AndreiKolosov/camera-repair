@@ -323,8 +323,8 @@
     line-height: 1.5;
   }
   .preview__slogan {
-    font-size: 32px;
-    line-height: 1.25;
+    font-size: 20px;
+    line-height: 1.5;
     max-width: 648px;
   }
   .preview__decor-container {
@@ -352,15 +352,6 @@
 @media screen and (max-width: 767px) {
   .preview {
     padding: 20px 30px 30px;
-  }
-  .preview__description {
-    max-width: 448px;
-    font-size: 12px;
-  }
-  .preview__slogan {
-    font-size: 12px;
-    line-height: 1.5;
-    max-width: 448px;
   }
   .preview__decor-container {
     display: flex;
@@ -390,6 +381,17 @@
   .preview__img:nth-child(4) {
     min-width: 280px;
     width: 100%;
+  }
+}
+@media screen and (max-width: 533px) {
+  .preview__description {
+    max-width: 448px;
+    font-size: 12px;
+  }
+  .preview__slogan {
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 448px;
   }
 }
 

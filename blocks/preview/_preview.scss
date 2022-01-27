@@ -74,8 +74,8 @@
     }
 
     &__slogan {
-      font-size: 32px;
-      line-height: 1.25;
+      font-size: 20px;
+      line-height: 1.5;
       max-width: 648px;
     }
 
@@ -113,17 +113,6 @@
   @media screen and (max-width: 767px) {
     & {
       padding: 20px 30px 30px;
-    }
-
-    &__description {
-      max-width: 448px;
-      font-size: 12px;
-    }
-
-    &__slogan {
-      font-size: 12px;
-      line-height: 1.5;
-      max-width: 448px;
     }
 
     &__decor-container {
@@ -165,6 +154,19 @@
 
         // grid-column: 1/1;
       }
+    }
+  }
+
+  @media screen and (max-width: 533px) {
+    &__description {
+      max-width: 448px;
+      font-size: 12px;
+    }
+
+    &__slogan {
+      font-size: 12px;
+      line-height: 1.5;
+      max-width: 448px;
     }
   }
 }
