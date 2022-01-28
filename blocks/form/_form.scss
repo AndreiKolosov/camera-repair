@@ -9,7 +9,7 @@
     box-sizing: border-box;
     position: relative;
     font-family: inherit;
-    color: #fff;
+    color: $primary-text-color;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -31,8 +31,14 @@
       line-height: 1.71;
       text-align: center;
       letter-spacing: 0.375px;
-      color: #fff;
-      margin: 0 10px 0 0;
+      color: $primary-text-color;
+      margin: 0 5px 0 0;
+    }
+
+    &_active {
+      &::before {
+        content: 'Круто, спасибо за доверие!';
+      }
     }
   }
 
