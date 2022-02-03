@@ -1,0 +1,110 @@
+.header {
+  padding: 60px 160px;
+
+  &__logo {
+    display: block;
+    margin: 0 0 60px 6px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.36;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 103px;
+      width: 99px;
+      height: 20px;
+      background-color: #25e197;
+      border-radius: 4px;
+    }
+
+    &::after {
+      content: 'мы открылись';
+      position: absolute;
+      top: 5px;
+      left: 111px;
+      width: 99px;
+      height: 20px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1;
+      color: #000;
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 112px;
+    line-height: 1;
+    margin: 0 0 20px 0;
+    max-width: 1030px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 0.87;
+    margin: 0 0 230px 0;
+    max-width: 1030px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    & {
+      padding: 60px 60px 32px;
+    }
+
+    &__logo {
+      margin: 0 0 70px 0;
+    }
+
+    &__title {
+      font-size: 70px;
+      line-height: 1.29;
+      max-width: 644px;
+      margin: 0;
+    }
+
+    &__subtitle {
+      font-size: 50px;
+      line-height: 1.2;
+      max-width: 644px;
+      margin: 0 0 470px 0;
+    }
+  }
+
+  @media screen and (max-width: 533px) {
+    & {
+      padding: 24px 20px 20px;
+    }
+
+    &__logo {
+      font-size: 20px;
+      line-height: 1.4;
+      margin: 0 0 60px 0;
+
+      &::before {
+        left: 99px;
+      }
+
+      &::after {
+        left: 107px;
+      }
+    }
+
+    &__title {
+      font-size: 50px;
+      line-height: 1.2;
+      max-width: 320px;
+      margin: 0 0 10px 0;
+    }
+
+    &__subtitle {
+      font-size: 30px;
+      line-height: 1.27;
+      max-width: 320px;
+      margin: 0 0 260px 0;
+    }
+  }
+}

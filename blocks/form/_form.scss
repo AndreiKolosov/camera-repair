@@ -1,0 +1,99 @@
+.form {
+  &__email-input {
+    border: none;
+    outline: none;
+    background-color: rgba(142, 142, 152, 0.2);
+    border-radius: 8px 0px 0px 8px;
+    width: 348px;
+    height: 50px;
+    box-sizing: border-box;
+    position: relative;
+    font-family: inherit;
+    color: $primary-text-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.375px;
+    padding: 0 16px;
+    cursor: pointer;
+  }
+
+  &__button {
+    position: absolute;
+    width: 221px;
+    height: 50px;
+    background-color: #47474c;
+    border-radius: 0px 8px 8px 0px;
+
+    &::before {
+      content: 'Отремонтируйте камеру';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      text-align: center;
+      letter-spacing: 0.375px;
+      color: $primary-text-color;
+      margin: 0 5px 0 0;
+    }
+
+    &_active {
+      &::before {
+        content: 'Круто, спасибо за доверие!';
+      }
+    }
+  }
+
+  &__subline {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #47474c;
+    margin: 12px 0 0 10px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__email-input {
+      width: calc(100% - 221px);
+    }
+  }
+
+  @media screen and (max-width: 533px) {
+    &__button {
+      width: 51px;
+      height: 50px;
+      &::before {
+        content: none;
+      }
+    }
+    &__email-input {
+      width: calc(100% - 51px);
+    }
+  }
+
+  &_place_footer {
+    grid-area: form;
+
+    .form__subline {
+      margin: 12px 0 0 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+      & {
+        margin: 0 0 60px 0;
+      }
+
+      .form__email-input {
+        width: calc(100% - 300px);
+      }
+    }
+
+    @media screen and (max-width: 533px) {
+      & {
+        margin: 0 0 40px 0;
+      }
+      .form__email-input {
+        width: calc(100% - 51px);
+      }
+    }
+  }
+}

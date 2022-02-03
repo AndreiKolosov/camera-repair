@@ -1,0 +1,112 @@
+.services {
+  padding: 60px 30px;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__card {
+    max-width: 550px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #1c1c1e;
+    border-radius: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #232327;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__card-name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    color: $primary-subtext-color;
+    margin: 0 0 20px 0;
+    max-width: 500px;
+  }
+
+  &__card-title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1;
+    max-width: 500px;
+    margin: 0 0 40px 0;
+  }
+
+  &__card-description {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.25;
+    color: #8e8e98;
+    max-width: 500px;
+    margin: 0 0 40px 0;
+  }
+
+  &__service-price {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    color: #25e197;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    & {
+      padding: 100px 60px;
+    }
+
+    &__list {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__card {
+      margin-right: 0;
+      margin-bottom: 20px;
+      max-width: 648px;
+      width: 100%;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 533px) {
+    & {
+      padding: 40px 20px;
+    }
+
+    &__card {
+      padding: 20px;
+    }
+
+    &__card-name {
+      margin: 0 0 10px 0;
+    }
+
+    &__card-title {
+      font-size: 24px;
+      margin: 0 0 36px 0;
+    }
+
+    &__card-description {
+      font-size: 12px;
+      line-height: 1.5;
+      margin: 0 0 100px 0;
+    }
+
+    &__service-price {
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+}
